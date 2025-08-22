@@ -1,0 +1,116 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* General Page Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #e8f5e9, #f1f8e9, #e3f2fd); /* soft green to light blue */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #388E3C, #2E7D32, #1B5E20);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    letter-spacing: 1.2px;
+    font-weight: 600;
+}
+
+/* Main Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+    transition: transform 0.2s ease;
+}
+
+.container:hover {
+    transform: translateY(-3px);
+}
+
+/* Headings */
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #222;
+}
+
+h2 {
+    border-left: 6px solid #4CAF50;
+    padding-left: 10px;
+    margin-top: 40px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #2E7D32;
+}
+
+h3 {
+    font-size: 1.3rem;
+    margin-top: 25px;
+    color: #444;
+    font-weight: 500;
+}
+
+/* Single Images */
+.container img {
+    max-width: 100%;
+    display: block;
+    margin: 20px auto;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.container img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+}
+
+/* Row of Images (side by side) */
+.image-row {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+
+.image-row img {
+    width: 46%;
+    max-width: 420px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.image-row img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 10px 28px rgba(0,0,0,0.3);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: linear-gradient(90deg, #c8e6c9, #f1f8e9);
+    margin-top: 40px;
+    font-size: 0.95rem;
+    color: #333;
+    letter-spacing: 0.5px;
+    border-top: 2px solid #ccc;
+}
